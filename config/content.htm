@@ -21,12 +21,13 @@
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
 <h2>Python自我練習</h2>
-<h3>Week5</h3>
-<p><span style="font-weight: 400;">def :定義一個東西</span></p>
+<h3>1-1</h3>
+<p>def :定義一個東西</p>
 <p><span style="font-weight: 400;">print() 映出這個東西 用法 print(‘hello world’)</span></p>
-<p><span style="font-weight: 400;">type 資料的型態 用法: a = 123 </span></p>
-<p><span style="font-weight: 400;">                                                  type(a)</span></p>
-<p><span style="font-weight: 400;">                              結果顯示 init</span></p>
+<p><span style="font-weight: 400;">type 資料的型態 </span></p>
+<p><span style="font-weight: 400;">用法: a = 123 </span></p>
+<p><span style="font-weight: 400;">               type(a)</span></p>
+<p><span style="font-weight: 400;">結果顯示 init</span></p>
 <p><span style="font-weight: 400;">   init  整數</span></p>
 <p><span style="font-weight: 400;">   str  字串 </span></p>
 <p><span style="font-weight: 400;">   float 浮點數</span></p>
@@ -66,6 +67,45 @@ elif hp &lt; 40: #hp小於40時
    print('回家補給')
 else: #hp介於60~40之間 #不可放條件
    print('打打小怪就好')</pre>
+<p>for X in range(a,b) 迴圈  X的迴圈為a到b-1   </p>
+<p>for X in range(b) 從頭到b-1</p>
+<p>練習</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> for X in range(1,10) : #X迴圈1~9
+    for Y in range(1,10) : #Y迴圈1~9 
+       print(X*Y,end=' ') #end=' '結束時空格
+    print(end='\n') #自動換下行
+  
+</pre>
+<h3>1-2</h3>
+<p>A = [ , , ]  : llist  列表 </p>
+<p>list = [start:end] print(list)回列出start+1~end</p>
+<p><span><span class="_7xn">  list.append(x)</span>: 把變數x塞到list的最後面</span></p>
+<p><span><span class="_7xn">  list.insert(i, x)</span>: 把變數x塞到i這個位置上</span></p>
+<p><span><span class="_7xn">  list.pop()</span>: 把list的最後一格丟掉</span></p>
+<p><span><span class="_7xn">  list.pop(i)</span>: 把list的第i格丟掉</span></p>
+<p><span><span class="_7xn">  list.remove(x)</span>: 會把第一個出現的變數x拿掉</span></p>
+<p><span><span class="_7xn">  list.clear()</span>: 清除list的資料</span></p>
+<p><span></span><span><span class="_7xn">  list[start: end]</span>，<span class="_7xn">start</span>和<span class="_7xn">end</span>都可以省略不寫</span></p>
+<p><span><span class="_7xn">   start</span>的預設為0</span></p>
+<p><span><span class="_7xn">   end</span>的預設為<span class="_7xn">len(list)</span></span></p>
+<p><span><span class="_7xn">   liest[ :end]</span>代表 0~end-1</span></p>
+<p><span><span class="_7xn">   list[start: ]</span>代表start~len(list)-1</span></p>
+<p><span><span class="_7xn">   list[ : ]</span>代表0~len(list)-1</span></p>
+<p>  len()計算list的長度</p>
+<p>  sum()計算list中的int總和</p>
+<p>練習:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">scores=[]
+for i in range(0,10):
+    i = int(input('輸入數字: '))
+    scores.append(i)
+print(scores)
+print(end='\n')
+    
+for q in range(0,3):
+    a = int(input('輸入起始: '))
+    b = int(input('輸入結束: '))
+    print('總和: ', sum(scores[a:b]))
+    print(end='\n')</pre>
 <p></p><h1>OnShape 手冊</h1>
 <p><a href="https://www.onshape.com/">https://www.onshape.com/</a> </p>
 <p>電腦輔助設計實習課程教材: <a href="http://mde.tw/cadp2018/content/">http://mde.tw/cadp2018/content/</a> </p>
@@ -74,5 +114,5 @@ else: #hp介於60~40之間 #不可放條件
 <h1>meme</h1>
 <p><img alt="" class="img" height="400" src="https://scontent.ftpe5-1.fna.fbcdn.net/v/t1.15752-9/36836051_1351655834866636_4919033590366339072_n.png?_nc_cat=106&amp;_nc_ht=scontent.ftpe5-1.fna&amp;oh=27a0254906c27bd4042fba61166e157a&amp;oe=5C5EE05C" style="background-color: #ffffff; color: #626262;" width=""/></p>
 <h2>軍事迷因</h2>
-<p><img alt="" class="img" height="400" p="" src="https://scontent.ftpe5-1.fna.fbcdn.net/v/t1.15752-9/36816339_1351655234866696_6809670716527476736_n.png?_nc_cat=103&amp;_nc_ht=scontent.ftpe5-1.fna&amp;oh=615d2847e0cc1e13071aea737e4e89eb&amp;oe=5C49F181" width=""/><img alt="" class="img" height="400" src="https://scontent.ftpe5-1.fna.fbcdn.net/v/t1.15752-9/36251065_1332576296774590_6297191971773480960_n.png?_nc_cat=110&amp;_nc_ht=scontent.ftpe5-1.fna&amp;oh=8194fcbe24900bef83d31b26dfaac827&amp;oe=5C4AA58B"/><img alt="" class="img" height="400" src="https://scontent.ftpe5-1.fna.fbcdn.net/v/t1.15752-9/33585830_2079736772307295_3410180535257923584_n.png?_nc_cat=102&amp;_nc_ht=scontent.ftpe5-1.fna&amp;oh=63600cfb2202f38c4e33d5936d5e9c1c&amp;oe=5C5CA379"/></p>
+<p><img alt="" class="img" height="400" p="" src="https://scontent.ftpe5-1.fna.fbcdn.net/v/t1.15752-9/36816339_1351655234866696_6809670716527476736_n.png?_nc_cat=103&amp;_nc_ht=scontent.ftpe5-1.fna&amp;oh=615d2847e0cc1e13071aea737e4e89eb&amp;oe=5C49F181" width=""/><img alt="" class="img" height="400" src="https://scontent.ftpe5-1.fna.fbcdn.net/v/t1.15752-9/36251065_1332576296774590_6297191971773480960_n.png?_nc_cat=110&amp;_nc_ht=scontent.ftpe5-1.fna&amp;oh=8194fcbe24900bef83d31b26dfaac827&amp;oe=5C4AA58B"/><img alt="" class="img" height="500" src="https://scontent.ftpe5-1.fna.fbcdn.net/v/t1.15752-9/33585830_2079736772307295_3410180535257923584_n.png?_nc_cat=102&amp;_nc_ht=scontent.ftpe5-1.fna&amp;oh=63600cfb2202f38c4e33d5936d5e9c1c&amp;oe=5C5CA379"/></p>
 <p></p>
