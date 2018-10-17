@@ -33,7 +33,41 @@
 <h1>Python 手冊</h1>
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
-<h2>1-1</h2>
+<h2>EX</h2>
+<p>EX1:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入 Ex1 原始碼
+a = 0
+def my_print(n, input_str):  #定義my_print函數式
+    print("以下將重覆列印 '", input_str + "' " + str(n) + "次")
+    for i in range(n):   #n的迴圈,會從0到n-1
+        print(i, input_str)
+
+my_print(5, "Hello World!") #映出5次的Hello World
+the_str = "開始學習 Python"  
+num = input("請輸入要列印的次數!") #輸入即便為num
+my_print(int(num), the_str) #用my_print函數式,映出num次的開始學習 Python
+a = a + 1   #=是代入的意思,第二列說明a是0,a=a+1後a的值會變成0+1,
+print("(" + str(a) + ")", "_" * 25)
+
+def myfun():
+    yield 1 
+    yield 2
+    yield 3
+
+for i in myfun():
+    print(i)
+
+x = iter(myfun()) #列出myfun的物件,列完一個換行
+y = list(myfun()) #list列出myfun的所有物件
+
+a = a + 1 #a又再次加1,變為2
+print("(" + str(a) + ")", "_" * 25)
+print(x.__next__())
+print(x.__next__())
+print(x.__next__())
+print(y)
+</pre>
+<p></p><h2>1-1</h2>
 <p>def :定義一個東西</p>
 <p><span style="font-weight: 400;">print() 映出這個東西 用法 print(‘hello world’)</span></p>
 <p><span style="font-weight: 400;">type 資料的型態 </span></p>

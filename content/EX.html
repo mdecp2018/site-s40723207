@@ -67,5 +67,38 @@ $(function(){
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a><li><a href='Week2.html'>Week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><ul><li><a href='EX.html'>EX</a><li><a href='1-1.html'>1-1</a><li><a href='1-2.html'>1-2</a></li></ul><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a><li><a href='meme.html'>meme</a><ul><li><a href='軍事迷因.html'>軍事迷因</a></li></ul></nav><section>Week5 << <a href='Week5.html'>Previous</a> <a href='Week7.html'>Next</a> >> Week7<br /><h1>Week6</h1>
-<br />Week5 << <a href='Week5.html'>Previous</a> <a href='Week7.html'>Next</a> >> Week7</section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><li><a href='簡介.html'>簡介</a><ul><li><a href='CMSimfly 網站.html'>CMSimfly 網站</a><li><a href='reveal 投影片.html'>reveal 投影片</a><li><a href='pelican 網誌.html'>pelican 網誌</a></li></ul><li><a href='組員操作影片.html'>組員操作影片</a><ul><li><a href='Week1.html'>Week1</a><li><a href='Week2.html'>Week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a></li></ul><li><a href='Python 手冊.html'>Python 手冊</a><ul><li><a href='EX.html'>EX</a><li><a href='1-1.html'>1-1</a><li><a href='1-2.html'>1-2</a></li></ul><li><a href='OnShape 手冊.html'>OnShape 手冊</a><li><a href='Fusion 360.html'>Fusion 360</a><li><a href='meme.html'>meme</a><ul><li><a href='軍事迷因.html'>軍事迷因</a></li></ul></nav><section>Python 手冊 << <a href='Python 手冊.html'>Previous</a> <a href='1-1.html'>Next</a> >> 1-1<br /><h1>EX</h1>
+<p>EX1:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入 Ex1 原始碼
+a = 0
+def my_print(n, input_str):  #定義my_print函數式
+    print("以下將重覆列印 '", input_str + "' " + str(n) + "次")
+    for i in range(n):   #n的迴圈,會從0到n-1
+        print(i, input_str)
+
+my_print(5, "Hello World!") #映出5次的Hello World
+the_str = "開始學習 Python"  
+num = input("請輸入要列印的次數!") #輸入即便為num
+my_print(int(num), the_str) #用my_print函數式,映出num次的開始學習 Python
+a = a + 1   #=是代入的意思,第二列說明a是0,a=a+1後a的值會變成0+1,
+print("(" + str(a) + ")", "_" * 25)
+
+def myfun():
+    yield 1 
+    yield 2
+    yield 3
+
+for i in myfun():
+    print(i)
+
+x = iter(myfun()) #列出myfun的物件,列完一個換行
+y = list(myfun()) #list列出myfun的所有物件
+
+a = a + 1 #a又再次加1,變為2
+print("(" + str(a) + ")", "_" * 25)
+print(x.__next__())
+print(x.__next__())
+print(x.__next__())
+print(y)
+</pre>
+<p></p><br />Python 手冊 << <a href='Python 手冊.html'>Previous</a> <a href='1-1.html'>Next</a> >> 1-1</section></div></body></html>
