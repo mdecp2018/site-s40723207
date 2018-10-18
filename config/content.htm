@@ -34,39 +34,68 @@
 <p>計算機程式教材:  <a href="http://mde.tw/cp2018/content/">http://mde.tw/cp2018/content/</a> </p>
 <p>可攜程式下載: <a href="https://drive.google.com/file/d/1DWtyoUhl8CycKJ8uulB3viRXE39KqpE1/view?usp=sharing">p37.7z</a></p>
 <h2>EX</h2>
-<p>EX1:</p>
+<h3>EX1:</h3>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入 Ex1 原始碼
 a = 0
 def my_print(n, input_str):  #定義my_print函數式
     print("以下將重覆列印 '", input_str + "' " + str(n) + "次")
     for i in range(n):   #n的迴圈,會從0到n-1
         print(i, input_str)
-
+ 
 my_print(5, "Hello World!") #映出5次的Hello World
-the_str = "開始學習 Python"  
+the_str = "開始學習 Python" 
 num = input("請輸入要列印的次數!") #輸入即便為num
 my_print(int(num), the_str) #用my_print函數式,映出num次的開始學習 Python
 a = a + 1   #=是代入的意思,第二列說明a是0,a=a+1後a的值會變成0+1,
 print("(" + str(a) + ")", "_" * 25)
-
-def myfun():
-    yield 1 
+ 
+def myfun(): 
+    yield 1  #將myfun添加1~3
     yield 2
     yield 3
-
-for i in myfun():
+ 
+for i in myfun(): #
     print(i)
-
+ 
 x = iter(myfun()) #列出myfun的物件,列完一個換行
 y = list(myfun()) #list列出myfun的所有物件
 
 a = a + 1 #a又再次加1,變為2
 print("(" + str(a) + ")", "_" * 25)
-print(x.__next__())
-print(x.__next__())
+print(x.__next__()) #列出myfun的第一件
+print(x.__next__()) #列出myfun的下一件
 print(x.__next__())
 print(y)
 </pre>
+<h3>EX2:</h3>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># Python 的內建資料型別
+import math
+def f():
+    print("This is a user-defined function")
+    return 42
+
+print("Some basic types in Python:")
+print(type(2))           # int
+print(type(2.2))         # float
+print(type("2.2"))       # str  (string)
+print(type(2 &lt; 2.2))     # bool (boolean)
+print(type(math))        # module
+print(type(math.tan))    # builtin_function_or_method ("function" in Brython)
+print(type(f))           # function (user-defined function)
+print(type(type(42)))    # type
+
+print("#####################################################")
+
+print("And some other types we will see later in the course...")
+print(type(Exception())) # Exception
+print(type(range(5)))    # range
+print(type([1,2,3]))     # list
+print(type((1,2,3)))     # tuple
+print(type({1,2}))       # set
+print(type({1:42}))      # dict (dictionary or map)
+print(type(2+3j))        # complex  (complex number) (we may not see this type)
+</pre>
+<p><br/>int :數值 整數<br/>float :浮點數 有小數點的數值<br/>str :字串 以""包住<br/>bool :布林值 通常為真 假<br/>module :模組<br/>function :函式<br/>Exception :<br/>range :函数<br/>list :清單 []<br/>tuple :小括號 ()<br/>set :大括號 與數學中集合的概念類似 無順序<br/>dict :字典 可變容器模型 可存任意類型對象<br/>complex :複數<br/><br/></p>
 <p></p><h2>1-1</h2>
 <p>def :定義一個東西</p>
 <p><span style="font-weight: 400;">print() 映出這個東西 用法 print(‘hello world’)</span></p>
@@ -90,21 +119,18 @@ print(a+int(c))
 print(str(b)+c)#字串相加結果
 </pre>
 <p>if-else用法</p>
-<ul class="_5a_q _5yj1">
-<li class="_2cuy _509q _2vxa"><span>&gt; 大於</span></li>
-<li class="_2cuy _509q _2vxa"><span>&lt; 小於</span></li>
-<li class="_2cuy _509q _2vxa"><span>&gt;= 大於等於</span></li>
-<li class="_2cuy _509q _2vxa"><span>&lt;= 小於等於</span></li>
-<li class="_2cuy _509q _2vxa"><span>== 等於</span></li>
-<li class="_2cuy _509q _2vxa"><span>!== 不等於</span><span></span></li>
-</ul>
-<ul class="_5a_q _5yj1">
-<li class="_2cuy _509q _2vxa"><span>true 真的</span></li>
-<li class="_2cuy _509q _2vxa"><span>false 假的</span></li>
-<li class="_2cuy _509q _2vxa"><span>and 且</span></li>
-<li class="_2cuy _509q _2vxa"><span>or 或</span></li>
-<li class="_2cuy _509q _2vxa"><span>not 非</span></li>
-</ul>
+<p><span>&gt; 大於</span></p>
+<p><span>&lt; 小於</span></p>
+<p><span>&gt;= 大於等於</span></p>
+<p><span>&lt;= 小於等於</span></p>
+<p><span>== 等於</span></p>
+<p><span>!== 不等於</span></p>
+<p><span></span></p>
+<p><span></span><span>true 真的</span></p>
+<p><span>false 假的</span></p>
+<p><span>and 且</span></p>
+<p><span>or 或</span></p>
+<p><span>not 非</span></p>
 <p><span>練習</span></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">hp = 80 #生命值80
 if hp &gt; 60: #hp大於60時
@@ -121,8 +147,7 @@ else: #hp介於60~40之間 #不可放條件
        print(X*Y,end=' ') #end=' '結束時空格
     print(end='\n') #自動換下行
   
-</pre>
-<h2>1-2</h2>
+</pre><h2>1-2</h2>
 <p>A = [ , , ]  : llist  列表 </p>
 <p>list = [start:end] print(list)回列出start+1~end</p>
 <p><span><span class="_7xn">  list.append(x)</span>: 把變數x塞到list的最後面</span></p>
@@ -152,8 +177,17 @@ for q in range(0,3):
     b = int(input('輸入結束: '))
     print('總和: ', sum(scores[a:b]))
     print(end='\n')</pre>
-<p></p>
-<h1>OnShape 手冊</h1>
+<p>return 回傳</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def worker( a, b, c ):  #定義worker的形式
+    a = a + 1  
+    x = a + b
+    y = x * c
+    return y    #將Y回送至worker,worker的數值等於Y
+    z = x / y   #return以後不會運行
+print (worker(1,2,3))
+#結果為12
+</pre>
+<p></p><h1>OnShape 手冊</h1>
 <p><a href="https://www.onshape.com/">https://www.onshape.com/</a> </p>
 <p>電腦輔助設計實習課程教材: <a href="http://mde.tw/cadp2018/content/">http://mde.tw/cadp2018/content/</a> </p>
 <h1>Fusion 360</h1>
