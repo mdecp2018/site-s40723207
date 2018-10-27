@@ -1,6 +1,9 @@
 .container {
   position: relative;
-  background-image:url(http://farm1.i-part.com.tw/n1v1/3/7/0/7/1607073/photo/book384/1276280561841.jpg);height:1200px;
+  background-image:url(https://i.imgur.com/NzPaCq2.jpg);
+  color: #54ff00;
+  background-size: 100%
+  
 }
 header{
   background-image:url(https://imgur.com/FMrAkj7.jpg);height:100px;
@@ -41,6 +44,7 @@ background: #383;
 nav {
   left: 5px;
   width: 180px;
+  color:#54ff00;
 }
 
 /* 開始 unordered list menu*/
@@ -153,6 +157,7 @@ ul#css3menu1 img{
 ul#css3menu1 span{
 	display:block;
 	overflow:visible;
+	color:#54ff00;
 	background-image:url("arrowsub.gif");
 	background-position:right center;
 	background-repeat:no-repeat;
@@ -164,7 +169,7 @@ ul#css3menu1 ul span{
 }
 ul#css3menu1 ul li:hover>a,ul#css3menu1 ul li a.pressed{
 	background-color:#70B45A;
-	color:#FFFFFF;
+	color:#54ff00;
 	text-decoration:none;
 }
 ul#css3menu1 li.topmenu>a{
