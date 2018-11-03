@@ -6,6 +6,8 @@
 
 個人網站blog: https://mdecp2018.github.io/site-s40723207/blog/
 
+gitlab倉儲:https://gitlab.com/wesley229/40723207/tree/gh-pages
+
 # 2018fall
 
 2018 Fall 計算機程式與電腦輔助設計實習課程分組倉儲
