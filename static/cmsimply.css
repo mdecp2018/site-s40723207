@@ -1,8 +1,7 @@
 .container {
   position: relative;
-  background-image:url(https://i.imgur.com/NzPaCq2.jpg);
   color: #54ff00;
-  background-size: 100%
+ 
   
 }
 header{
@@ -209,5 +208,7 @@ width: 195px;
 }
 body {
   margin-bottom: 120px;
+  background-image:url(https://i.imgur.com/NzPaCq2.jpg);
+  background-size: 100%
 }
 
