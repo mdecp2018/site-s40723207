@@ -1,13 +1,9 @@
 .container {
   position: relative;
-  color: #54ff00;
- 
-  
 }
 header{
-  background-image:url(https://imgur.com/FMrAkj7.jpg);height:100px;
+  background: #ccc;
   padding: 20px;
-  color: #ffee05;
 }
 confmenu
 {
@@ -43,7 +39,6 @@ background: #383;
 nav {
   left: 5px;
   width: 180px;
-  color:#54ff00;
 }
 
 /* 開始 unordered list menu*/
@@ -117,7 +112,7 @@ ul#css3menu1 a{
 	text-align:left;
 	text-decoration:none;
 	font:17px Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-	color:#00fff5;
+	color:#000000;
 	cursor:pointer;
 	padding:7px 12px;
 	background-color:;
@@ -156,7 +151,6 @@ ul#css3menu1 img{
 ul#css3menu1 span{
 	display:block;
 	overflow:visible;
-	color:#54ff00;
 	background-image:url("arrowsub.gif");
 	background-position:right center;
 	background-repeat:no-repeat;
@@ -168,7 +162,7 @@ ul#css3menu1 ul span{
 }
 ul#css3menu1 ul li:hover>a,ul#css3menu1 ul li a.pressed{
 	background-color:#70B45A;
-	color:#54ff00;
+	color:#FFFFFF;
 	text-decoration:none;
 }
 ul#css3menu1 li.topmenu>a{
@@ -208,7 +202,4 @@ width: 195px;
 }
 body {
   margin-bottom: 120px;
-  background-image:url(https://i.imgur.com/NzPaCq2.jpg);
-  background-size: 100%
 }
-
